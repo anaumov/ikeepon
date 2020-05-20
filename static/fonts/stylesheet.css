@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Proxima Nova Cn Th';
+    src: url('ProximaNovaCond-ExtrabldIt.eot');
+    src: url('ProximaNovaCond-ExtrabldIt.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNovaCond-ExtrabldIt.woff2') format('woff2'),
+        url('ProximaNovaCond-ExtrabldIt.woff') format('woff'),
+        url('ProximaNovaCond-ExtrabldIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+

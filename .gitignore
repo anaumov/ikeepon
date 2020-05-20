@@ -1,2 +1,7 @@
-.DS_Store
-release
+.DS_store
+package-lock.json
+node_modules
+.idea
+build
+source
+/*.exe.stackdump

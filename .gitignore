@@ -6,3 +6,4 @@ build
 source
 static/fonts
 /*.exe.stackdump
+release

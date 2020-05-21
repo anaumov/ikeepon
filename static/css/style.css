@@ -801,6 +801,9 @@ a {
     .actions__pic-mob {
         display: block;
         margin: 40px auto 0;
+        border-radius: 39px;
+        border: 3px solid #281D53;
+        overflow: hidden;
     }
 
     .actions__pic-mob img {

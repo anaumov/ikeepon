@@ -803,6 +803,10 @@ a {
         margin: 40px auto 0;
     }
 
+    .actions__pic-mob img {
+      max-width: 100%;
+    }
+
     .actions__item {
         margin: 0 0 40px 0;
     }

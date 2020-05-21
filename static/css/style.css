@@ -166,7 +166,7 @@ a {
     left: -10%;
     width: 100%;
     min-height: 100%;
-    background-image: url(../images/top-vector.svg);
+    /* background-image: url(../images/top-vector.svg); */
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 10;
@@ -366,6 +366,7 @@ a {
 
 .actions__item--soon .label-soon {
     position: relative;
+    left: 2px;
     top: -10px;
     display: inline-flex;
     width: 55px;
@@ -661,11 +662,11 @@ a {
 .vector-bottom:before {
     content: '';
     position: absolute;
-    left: -14%;
-    top: -32%;
+    right: calc(50% - 480px + 65px);
+    top: -299px;
     bottom: 0;
-    width: 100%;
-    min-height: 100%;
+    width: 1560px;
+    height: 692px;
     background-image: url(../images/bottom-vector.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -750,7 +751,7 @@ a {
     .actions {
         padding: 40px 0 60px;
     }
-    
+
     .actions__wrapper {
         display: flex;
         flex-direction: column;

@@ -808,6 +808,7 @@ a {
 
     .actions__pic-mob img {
       max-width: 100%;
+      display: block;
     }
 
     .actions__item {

@@ -237,7 +237,6 @@ a {
 }
 
 .bot-btn span {
-    /* font-family: "proxima-nova", sans-serif; */
     font-family: 'Proxima Nova Cn Th', sans-serif;
     color: #fff;
     position: relative;
@@ -246,6 +245,7 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 28px;
+    margin-right: 2px;
 }
 
 .bot-btn svg {

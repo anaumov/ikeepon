@@ -359,7 +359,7 @@ a {
     min-width: 297px;
 } */
 
-.actions__pic img {
+.actions__pic img, .actions__pic video {
     width: 100%;
     display: block;
 }

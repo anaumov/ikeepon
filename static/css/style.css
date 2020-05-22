@@ -352,7 +352,7 @@ a {
 }
 
 .actions__pic--2 {
-    height: 642px;
+    height: 635px;
     min-width: 297px;
 }
 
@@ -364,17 +364,38 @@ a {
     color: rgba(0,0,0, .3);
 }
 
-.actions__item--soon .label-soon {
+.label-soon {
     position: relative;
-    left: 2px;
-    top: -10px;
+    left: 5px;
+    top: -13px;
     display: inline-flex;
-    width: 55px;
+    font-size: 16px;
+    line-height: 21px;
+    height: 18px;
+    color: #fff;
+    z-index: 10;
+    font-family: 'Proxima Nova Cn Th';
+    font-weight: 800;
+    font-style: italic;
+    padding: 0 0 0 2px;
 }
 
-.actions__item--soon .label-soon img {
-    width: 100%;
+.label-soon:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -2px;
+    width: calc(100% + 8px);
+    height: 100%;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    background: #1FDCC5;
+    z-index: -1;
 }
+
+
 
 .description {
     background-color: #281D53;
@@ -710,11 +731,12 @@ a {
 
     .bot-btn {
         height: 42px;
-        padding: 0 0 0 0px;
+        padding: 0;
     }
 
     .bot-btn span {
-        font-size: 18px
+        font-size: 18px;
+        padding: 0 0px 0 5px;
     }
 
     /*.bot-btn svg {*/
@@ -724,11 +746,12 @@ a {
     /*}*/
 
     .bot-btn:before {
-        width: calc(100% + 20px);
+        width: calc(100% + 9px);
     }
 
     .bot-btn:after {
-        width: calc(100% + 20px);
+        left: -2px;
+        width: calc(100% + 10px);
     }
 
     .header__text p {
@@ -804,6 +827,7 @@ a {
         border-radius: 39px;
         border: 3px solid #281D53;
         overflow: hidden;
+        max-width: 290px;
     }
 
     .actions__pic-mob img {
@@ -813,6 +837,11 @@ a {
 
     .actions__item {
         margin: 0 0 40px 0;
+    }
+
+    .label-soon {
+        font-size: 14px;
+        line-height: 21px;
     }
 
     .description__wrapper {
@@ -827,6 +856,7 @@ a {
 
     .description__incut {
         font-size: 14px;
+        max-width: 100%;
     }
 
     .description__pic .desktop {

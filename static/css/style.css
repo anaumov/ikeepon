@@ -344,22 +344,24 @@ a {
 
 .actions__pic {
     margin: 0;
-    min-width: 293px;
+    min-width: 318px;
+    max-width: 318px;
     border-radius: 39px;
     border: 3px solid #281D53;
     overflow: hidden;
 }
-.actions__pic--1 {
+/* .actions__pic--1 {
     height: 700px;
 }
 
 .actions__pic--2 {
     height: 635px;
     min-width: 297px;
-}
+} */
 
 .actions__pic img {
     width: 100%;
+    display: block;
 }
 
 .actions__item--soon {

@@ -242,15 +242,41 @@ a {
     width: 196px;
     height: 62px;
     margin: 0;
-    padding: 0 10px 0 0;
+    padding: 0;
     background-image: url('../images/button-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transition: background linear 0.2s;
 }
 
-.bot-btn:hover {
-    background-image: url('../images/button-bg-hover.svg');
+.bot-btn:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    width: calc(100% + 15px);
+    height: 100%;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    background: #1FDCC5;
+    z-index: 0;
+}
+
+.bot-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: calc(100% + 15px);
+    height: 100%;
+    transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    background: #281D53;
+    z-index: 0;
 }
 
 .bot-btn span {
@@ -262,11 +288,7 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 28px;
-    margin-right: 2px;
-}
-
-.bot-btn svg {
-    display: none;
+    margin: 0 0 0 4px;
 }
 
 .promo__title {

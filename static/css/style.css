@@ -246,6 +246,11 @@ a {
     background-image: url('../images/button-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    transition: background linear 0.2s;
+}
+
+.bot-btn:hover {
+    background-image: url('../images/button-bg-hover.svg');
 }
 
 .bot-btn span {
@@ -345,7 +350,7 @@ a {
 .actions__title {
     font-size: 36px;
     font-weight: normal;
-    line-height: 42px;
+    line-height: 40px;
     margin: 0 0 8px 0;
 }
 
@@ -584,7 +589,6 @@ a {
     margin: -15px 0 0 0;
 }
 
-
 .info__item-inner.show {
     display: block;
 }
@@ -731,7 +735,7 @@ a {
 }
 
 .copyright__text a:hover {
-    border-color: transparent;
+    border-color: #000;
 }
 
 .mail {
@@ -743,7 +747,7 @@ a {
 .mail:hover {
     font-size: 16px;
     color: #000;
-    border-bottom: 1px solid transparent;
+    border-color: #000;
 }
 
 .vector-bottom {
@@ -767,6 +771,7 @@ a {
 
 .left-padding-20 {
     padding-left: 20px;
+    color: #000;
 }
 
 
@@ -790,6 +795,9 @@ a {
         padding: 0 20px;
     }
 
+    .header {
+        background-image: url(../images/header_bg_mob.svg);
+    }
 
     .header:before {
         content: '';
@@ -816,7 +824,7 @@ a {
 
     .bot-btn span {
         font-size: 18px;
-        padding: 0 0px 0 5px;
+        padding: 0 0 0 7px;
     }
 
     /*.bot-btn svg {*/
@@ -876,7 +884,7 @@ a {
 
     .actions__title {
         font-size: 30px;
-        line-height: 38px;
+        line-height: 36px;
     }
 
     .actions__desc {
@@ -1083,21 +1091,30 @@ a {
         margin: 0 20px 0 0;
     }
 
+    .vector-bottom {
+        overflow: hidden;
+    }
+
     .vector-bottom:before {
         content: '';
         position: absolute;
-        left: calc(100% - 930px);
+        left: calc(100% - 650px);
         right: 0;
-        top: -207px;
+        top: -85px;
         bottom: 0;
-        width: 900px;
-        /* height: 100%; */
-        /*background-image: url(../images/bottom-vector.svg);*/
+        width: 884px;
+        background-image: url(../images/bottom_comet_mobile.svg);
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: 70% auto;
         background-position: bottom 0 left 0;
         z-index: 100;
     }
+
+    .copyright .container {
+        align-items: flex-start;
+    }
+
+
 
 }
 

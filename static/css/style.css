@@ -466,9 +466,6 @@ a {
     justify-content: space-between;
 }
 
-.description .container {
-    padding: 0;
-}
 
 .description__text {
     margin: 0;
@@ -988,12 +985,13 @@ a {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-bottom: 40px;
     }
 
     .description__text {
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 16px;
     }
 
     .description__incut {

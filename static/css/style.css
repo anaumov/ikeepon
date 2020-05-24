@@ -842,12 +842,10 @@ a {
     .bot-btn {
         height: 42px;
         width: 128px;
-        padding: 0px 7px 3px 0;
     }
 
     .bot-btn span {
         font-size: 18px;
-        padding: 0 0 0 7px;
     }
 
     .bot-btn:before {
@@ -869,7 +867,7 @@ a {
         content: '';
         position: absolute;
         top: 0;
-        left: 7px;
+        left: 6px;
         width: calc(100% - 10px);
         height: 100%;
         transform: skew(-10deg);

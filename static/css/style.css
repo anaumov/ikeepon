@@ -243,18 +243,14 @@ a {
     height: 62px;
     margin: 0;
     padding: 0;
-    background-image: url('../images/button-bg.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: background linear 0.2s;
 }
 
 .bot-btn:before {
     content: '';
     position: absolute;
     top: 4px;
-    left: -1px;
-    width: calc(100% + 15px);
+    left: 14px;
+    width: calc(100% - 20px);
     height: 100%;
     transform: skew(-10deg);
     -webkit-transform: skew(-10deg);
@@ -268,8 +264,8 @@ a {
     content: '';
     position: absolute;
     top: 0;
-    left: -5px;
-    width: calc(100% + 15px);
+    left: 11px;
+    width: calc(100% - 20px);
     height: 100%;
     transform: skew(-10deg);
     -webkit-transform: skew(-10deg);
@@ -277,6 +273,11 @@ a {
     -o-transform: skew(-10deg);
     background: #281D53;
     z-index: 0;
+    transition: background-color linear 0.2s;
+}
+
+.bot-btn:hover:after {
+    background-color: #513CA0;
 }
 
 .bot-btn span {
@@ -849,12 +850,36 @@ a {
         padding: 0 0 0 7px;
     }
 
-    /*.bot-btn svg {*/
-    /*    display: block;*/
-    /*    position: relative;*/
-    /*    z-index: 100;*/
-    /*}*/
+    .bot-btn:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 10px;
+        width: calc(100% - 10px);
+        height: 100%;
+        transform: skew(-10deg);
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        background: #1FDCC5;
+        z-index: 0;
+    }
 
+    .bot-btn:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 7px;
+        width: calc(100% - 10px);
+        height: 100%;
+        transform: skew(-10deg);
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        background: #281D53;
+        z-index: 0;
+        transition: background-color linear 0.2s;
+    }
 
     .header__text p {
         width: 90%;

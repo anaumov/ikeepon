@@ -186,13 +186,16 @@ a {
     content: '';
     position: absolute;
     top: 10px;
-    left: calc(63% - 634px);
+    left: 50%;
     width: 1000px;
     min-height: 700px;
     background-image: url(../images/header_illustration.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 10;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .header__wrapper {
@@ -241,6 +244,9 @@ a {
     justify-content: center;
     margin: 0;
     padding: 17px 18px 14px 20px;
+}
+.bot-btn--top {
+  margin-top: 7px;
 }
 
 .bot-btn:before {
@@ -839,16 +845,12 @@ a {
         content: '';
         position: absolute;
         top: 5px;
-        left: 50%;
         width: 375px;
-        min-height: 660px;
+        min-height: 648px;
         background-image: url(../images/header_illustration-mob.png);
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 10;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
     }
 
     .header__text b {
@@ -862,8 +864,9 @@ a {
     }
 
     .bot-btn--top {
-      left: 4px;
+      left: 10px;
       bottom: 2px;
+      margin: 0;
     }
 
     .bot-btn span {
@@ -945,7 +948,7 @@ a {
 
     .actions--main {
         margin-top: 0;
-        padding: 45px 0 0;
+        padding: 55px 0 0;
     }
 
     .actions__title {
@@ -968,6 +971,7 @@ a {
 
     .actions__col--text {
         max-width: 100%;
+        padding: 0 0 20px 0;
     }
 
     .actions--extra .actions__pic {
@@ -1136,7 +1140,7 @@ a {
         width: 18px;
         height: 18px;
         background-size: cover;
-        top: 27px;
+        top: 23px;
     }
 
 

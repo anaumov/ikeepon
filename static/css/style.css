@@ -305,7 +305,7 @@ a {
 }
 
 .actions {
-    padding: 65px 0 50px;
+    padding: 65px 0 90px;
     position: relative;
     z-index: 100;
 }
@@ -633,7 +633,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     background: transparent;
-    padding: 16px 0;
+    padding: 30px 0 30px 0;
     font-size: 28px;
     font-weight: bold;
     line-height: 32px;
@@ -661,7 +661,7 @@ a {
     background-image: url("../images/info-cross.svg");
     border-radius: 50%;
     position: absolute;
-    top: 20px;
+    top: 34px;
     right: 0;
     -webkit-transition: all linear 0.2s;
     -o-transition: all linear 0.2s;
@@ -1024,6 +1024,10 @@ a {
         display: block;
     }
 
+    .info__item-toggle {
+        padding: 16px 0;
+    }
+
     .quotes {
         padding: 0;
     }
@@ -1125,8 +1129,9 @@ a {
         width: 18px;
         height: 18px;
         background-size: cover;
-        top: 26px;
+        top: 27px;
     }
+
 
     .footer .container {
         background-color: #FDE9E5;

@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-
-
     // Accordion in FAQ
     $(function() {
         var Accordion = function(el, multiple) {
@@ -20,11 +17,11 @@ $(document).ready(function() {
             $this = $(this),
                 $next = $this.next();
 
-            $next.slideToggle();
+            $next.slideToggle(200);
             $this.parent().toggleClass('open');
 
             if (!e.data.multiple) {
-                $el.find('.info__item-inner').not($next).slideUp().parent().removeClass('open');
+                $el.find('.info__item-inner').not($next).slideUp(200).parent().removeClass('open');
             };
         };
         var accordion = new Accordion($('.info__list'), false);

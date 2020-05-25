@@ -187,7 +187,7 @@ a {
 .header:before {
     content: '';
     position: absolute;
-    top: calc(50% + 10px);
+    top: calc(50% + -5px);
     left: 50%;
     max-width: 1000px;
     width: 100%;
@@ -355,7 +355,7 @@ a {
     max-width: 415px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 0 63px 0;
+    padding: 0 0 30px 0;
 }
 
 .actions__item {
@@ -367,7 +367,7 @@ a {
 }
 
 .actions__item--right {
-    padding-left: 40px;
+    padding-left: 50px;
 }
 
 .actions__pic-mob {
@@ -641,7 +641,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     background: transparent;
-    padding: 30px 0 20px 0;
+    padding: 30px 30px 20px 0;
     font-size: 28px;
     font-weight: bold;
     line-height: 32px;
@@ -806,16 +806,27 @@ a {
 }
 
 .vector-bottom:before {
+    /*content: '';*/
+    /*position: absolute;*/
+    /*right: calc(50% - 480px + 65px);*/
+    /*top: -299px;*/
+    /*bottom: 0;*/
+    /*width: 1560px;*/
+    /*height: 692px;*/
+    /*background-image: url(../images/bottom_comet_desktop.svg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*z-index: 100;*/
+
     content: '';
     position: absolute;
-    right: calc(50% - 480px + 65px);
-    top: -299px;
-    bottom: 0;
+    right: 7%;
+    bottom: -3px;
     width: 1560px;
-    height: 692px;
+    height: 480px;
     background-image: url(../images/bottom_comet_desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: 100;
 }
 
@@ -1138,8 +1149,9 @@ a {
     }
 
     .info__item-toggle {
-        padding: 16px 0;
+        padding: 16px 24px 16px 0;
         font-size: 20px;
+        line-height: 28px;
     }
 
     .info__item .icon-cross {

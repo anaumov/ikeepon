@@ -149,7 +149,7 @@ a {
 
 .inner-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 812px;
     margin: 0 auto;
 }
 
@@ -174,7 +174,7 @@ a {
 
 .header {
     min-height: 736px;
-    padding: 20px 0;
+    padding: 12px 0 20px 0;
     background-image: url("../images/bg-top.svg");
     background-size: cover;
     background-position: right 52% top;
@@ -185,8 +185,8 @@ a {
 .header:before {
     content: '';
     position: absolute;
-    top: 0%;
-    left: calc(63% - 645px);
+    top: 10px;
+    left: calc(63% - 634px);
     width: 1000px;
     min-height: 700px;
     background-image: url(../images/header_illustration.png);
@@ -239,10 +239,8 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 196px;
-    height: 62px;
     margin: 0;
-    padding: 0;
+    padding: 17px 18px 14px 20px;
 }
 
 .bot-btn:before {
@@ -289,7 +287,7 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 28px;
-    margin: 3px 0 0 2px;
+    letter-spacing: 1px;
 }
 
 .promo__title {
@@ -454,7 +452,7 @@ a {
 }
 
 .description__wrapper {
-    margin: 0 0 60px 0;
+    margin: 0 0 40px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -833,13 +831,14 @@ a {
     }
 
     .header {
-        background-image: url(../images/header_bg_mob.svg);
+      padding: 24px 0 20px 0;
+      background-image: url(../images/header_bg_mob.svg);
     }
 
     .header:before {
         content: '';
         position: absolute;
-        top: 0%;
+        top: 5px;
         left: 50%;
         width: 375px;
         min-height: 660px;
@@ -852,10 +851,19 @@ a {
         transform: translateX(-50%);
     }
 
+    .header__text b {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
 
     .bot-btn {
-        height: 42px;
-        width: 128px;
+      padding: 11px 9px 9px 10px;
+    }
+
+    .bot-btn--top {
+      left: 4px;
+      bottom: 2px;
     }
 
     .bot-btn span {
@@ -865,9 +873,9 @@ a {
     .bot-btn:before {
         content: '';
         position: absolute;
-        top: 4px;
+        top: 2px;
         left: 10px;
-        width: calc(100% - 10px);
+        width: calc(100% - 12px);
         height: 100%;
         transform: skew(-10deg);
         -webkit-transform: skew(-10deg);
@@ -894,7 +902,6 @@ a {
     }
 
     .header__text p {
-        width: 90%;
         max-width: 435px;
         font-size: 14px;
         line-height: 18px;

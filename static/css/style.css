@@ -1093,8 +1093,8 @@ a {
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
         order: 3;
-        margin-bottom: -5px;
-        margin-left: -20px;
+        margin: 23px 0 0 -20px;
+        min-width: 375px;
         width: 100%;
         height: 458px;
         background-image: url(../images/pic-portrait-mobile.png);
@@ -1108,7 +1108,7 @@ a {
     }
 
     .info {
-        padding: 40px 0 70px 0;
+        padding: 40px 0 60px 0;
     }
 
     .info .container {
@@ -1121,7 +1121,7 @@ a {
     }
 
     .info__item-toggle {
-        padding: 20px 0 20px 0;
+        padding: 16px 0;
         font-size: 20px;
     }
 
@@ -1142,7 +1142,7 @@ a {
         font-size: 24px;
         line-height: 32px;
         padding: 0;
-        margin: 0 0 125px 0;
+        margin: 0 0 135px 0;
         max-width: 90%;
     }
 
@@ -1180,8 +1180,9 @@ a {
         align-items: flex-end;
     }
 
-
-
+    .footer__btn {
+      margin-top: 4px;
+    }
 }
 
 @media screen and (max-width: 480px) {

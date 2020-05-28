@@ -155,25 +155,6 @@ a {
     margin: 0 auto;
 }
 
-/*.vector {*/
-/*    position: relative;*/
-/*    max-width: 1000px;*/
-/*    margin: 0 auto;*/
-/*}*/
-
-/*.vector:before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0%;*/
-/*    left: calc(65% - 700px);*/
-/*    width: 1000px;*/
-/*    min-height: 700px;*/
-/*     background-image: url(../images/header_illustration.png);*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: contain;*/
-/*    z-index: 10;*/
-/*}*/
-
 .header {
     min-height: 736px;
     padding: 12px 0 20px 0;
@@ -182,23 +163,6 @@ a {
     background-position: right 52% top;
     position: relative;
     background-repeat: no-repeat;
-}
-
-.header:before {
-    content: '';
-    position: absolute;
-    top: calc(50% + -5px);
-    left: 50%;
-    max-width: 1000px;
-    width: 100%;
-    min-height: 700px;
-    background-image: url(../images/header_illustration.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 10;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 .header__wrapper {
@@ -211,6 +175,13 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    min-height: 700px;
+
+    width: 100%;
+    background-image: url(../images/header_illustration.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .header__text {
@@ -300,18 +271,6 @@ a {
     letter-spacing: 1px;
 }
 
-.promo__title {
-    /* font-family: "proxima-nova", sans-serif; */
-    font-family: 'Proxima Nova Bl', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 70px;
-    line-height: 67px;
-    color: #281D53;
-    position: relative;
-    z-index: 100;
-}
-
 .actions {
     padding: 65px 0 90px;
     position: relative;
@@ -374,10 +333,6 @@ a {
     display: none;
 }
 
-/*.actions__item--left {*/
-/*    padding-right: 40px;*/
-/*}*/
-
 .actions__title {
     font-size: 36px;
     font-weight: normal;
@@ -393,8 +348,6 @@ a {
 
 .actions__pic {
     margin: 0;
-    /*min-width: 318px;*/
-    /*max-width: 318px;*/
     border-radius: 39px;
     border: 3px solid #281D53;
     overflow: hidden;
@@ -617,16 +570,6 @@ a {
     margin: 0 0 8px 0;
 }
 
-/*.info__item-inner ul {*/
-/*    margin: 5px 0;*/
-/*    list-style-type: disc !important;*/
-/*    padding: 0px 0 0 20px;*/
-/*}*/
-
-/*.info__item-inner ul li {*/
-/*    margin: 5px 0;*/
-/*}*/
-
 .info__item-toggle {
     width: 100%;
     display: -webkit-box;
@@ -792,37 +735,21 @@ a {
     border-color: #000;
 }
 
-.vector-bottom {
+.footer-comet {
     position: relative;
-    z-index: 100;
 }
 
-.vector-bottom:before {
-    /*content: '';*/
-    /*position: absolute;*/
-    /*right: calc(50% - 480px + 65px);*/
-    /*top: -299px;*/
-    /*bottom: 0;*/
-    /*width: 1560px;*/
-    /*height: 692px;*/
-    /*background-image: url(../images/bottom_comet_desktop.svg);*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*z-index: 100;*/
-
+.footer-comet:before {
     content: '';
     position: absolute;
-    right: 7%;
-    bottom: -3px;
+    right: 50px;
+    top: -85px;
     width: 1560px;
     height: 480px;
     background-image: url(../images/bottom_comet_desktop.svg);
     background-repeat: no-repeat;
-    background-size: contain;
     z-index: 100;
 }
-
-
 
 /* breakpoints */
 
@@ -846,20 +773,16 @@ a {
     .header {
       padding: 24px 0 20px 0;
       background-image: url(../images/header_bg_mob.svg);
+      background-position: 0 100%;
+      min-height: auto;
     }
 
-    .header:before {
-        content: '';
-        position: absolute;
-        top: 5px;
-        width: 100%;
-        background-image: url(../images/header_illustration-mob.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: 10;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
+    .header__wrapper {
+        min-height: 500px;
+    }
+
+    .header__text {
+      margin: 0;
     }
 
     .header__text b {
@@ -920,7 +843,6 @@ a {
     }
 
     .header__text {
-        margin: 0 0 70px 0;
         width: calc(100% - 100px);
     }
 
@@ -1167,25 +1089,6 @@ a {
         margin: 0 20px 0 0;
     }
 
-    .vector-bottom {
-        overflow: hidden;
-    }
-
-    .vector-bottom:before {
-        content: '';
-        position: absolute;
-        left: calc(100% - 550px);
-        right: 0;
-        top: -154px;
-        bottom: 0;
-        width: 884px;
-        background-image: url(../images/bottom_comet_mobile.svg);
-        background-repeat: no-repeat;
-        background-size: 61% auto;
-        background-position: bottom 0 left 0;
-        z-index: 100;
-    }
-
     .copyright .container {
         align-items: flex-end;
     }
@@ -1197,39 +1100,16 @@ a {
 
 @media screen and (max-width: 480px) {
 
-    /*.vector:before {*/
-    /*    content: '';*/
-    /*    position: absolute;*/
-    /*    top: 0%;*/
-    /*    left: 50%;*/
-    /*    width: 100%;*/
-    /*    min-height: 660px;*/
-    /*    background-image: url(../images/header_illustration-mob.png);*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-size: contain;*/
-    /*    z-index: 10;*/
-    /*    transform: translateX(-50%);*/
-    /*}*/
-
-
-    /*.vector-bottom:before {*/
-    /*    content: '';*/
-    /*    position: absolute;*/
-    /*    left: -10%;*/
-    /*    top: auto;*/
-    /*    bottom: 0;*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    background-image: url(../images/bottom_comet_mobile.svg);*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-size: auto 400px;*/
-    /*    background-position: bottom -70px right 0px;*/
-    /*    z-index: 100;*/
-    /*}*/
-
     .header {
         min-height: 650px;
         background-position: right 60% top;
+    }
+
+    .header__wrapper {
+      background-image: url(../images/header_illustration-mob.png);
+      background-size: 375px;
+      background-position: center;
+      min-height: 610px;
     }
 
     .actions__pic-mob {
@@ -1239,6 +1119,14 @@ a {
 
     .footer__title {
         max-width: 280px;
+    }
+
+    .footer-comet:before {
+      background-image: url(../images/bottom_comet_mobile.svg);
+      width: 514px;
+      height: 402px;
+      top: 110px;
+      right: 8px;
     }
 
 }

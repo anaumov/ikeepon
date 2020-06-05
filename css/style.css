@@ -1027,10 +1027,9 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-
     .header {
-        min-height: 650px;
-        background-position: right 60% top;
+      min-height: 650px;
+      background-position: right 60% top;
     }
 
     .header__wrapper {
@@ -1041,20 +1040,19 @@ a {
     }
 
     .actions__pic-mob {
-        margin: 40px auto;
-        max-width: 100%;
+      margin: 40px auto;
+      max-width: 100%;
     }
 
     .footer__title {
-        max-width: 280px;
+      max-width: 280px;
     }
 
     .footer-comet:before {
       background-image: url(../images/bottom_comet_mobile.svg);
       width: 514px;
       height: 402px;
-      top: 110px;
+      top: 125px;
       right: 8px;
     }
-
 }
